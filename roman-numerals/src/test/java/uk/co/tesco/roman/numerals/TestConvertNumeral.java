@@ -1,7 +1,6 @@
 package uk.co.tesco.roman.numerals;
 
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -50,11 +49,13 @@ public class TestConvertNumeral {
 	 */
 	@After
 	public void tearDown() throws Exception {
+		
+		convertNumeral = null;
 	}
 
 	@Test
-	public void test() {
-		assertNull(convertNumeral.convert(1));
+	public void testNotNull() {
+		assertNotNull(convertNumeral.convert(1));
 	}
 
 }

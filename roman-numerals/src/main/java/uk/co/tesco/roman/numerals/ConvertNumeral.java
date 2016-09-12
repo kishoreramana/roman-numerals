@@ -19,7 +19,7 @@ public class ConvertNumeral {
 	 *         unable to convert.
 	 */
 	public String convert(int numeral) {
-		return null;
+		return String.valueOf(numeral);
 	}
 
 }
