@@ -1,5 +1,5 @@
 # roman-numerals
-This project will convert the numerals into roman numerals
+This project will convert the numerals (ranging from 1 till 3999) into roman numerals.
 
 # Description
 
@@ -19,3 +19,4 @@ CCXXVI=226
 CM=900
 CMXCVIII=998
 MDCCXII=1712
+
