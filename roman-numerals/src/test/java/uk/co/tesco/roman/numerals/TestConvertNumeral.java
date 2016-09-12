@@ -61,12 +61,18 @@ public class TestConvertNumeral {
 
 	@Test
 	public void testLessThanZero() {
-		assertEquals(CommonUtil.ERR_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.convert(-1));
+		assertEquals(CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.convert(-1));
 	}
 
 	@Test
 	public void testEqualToZero() {
-		assertEquals(CommonUtil.ERR_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.convert(0));
+		assertEquals(CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.convert(0));
 	}
+	
+	@Test
+	public void testGreaterThanUpperLimit() {
+		assertEquals(CommonUtil.ERR_MSG_NUMBER_GREATER_THAN_UPPER_LIMIT, convertNumeral.convert(4000));
+	}
+	
 
 }

@@ -22,9 +22,9 @@ public class ConvertNumeral {
 		String result = null;
 
 		if (numeral < CommonUtil.ROMAN_NUMERAL_LOWER_LIMIT) {
-			result = CommonUtil.ERR_NUMBER_LESS_THAN_LOWER_LIMIT;
+			result = CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT;
 		} else if (numeral > CommonUtil.ROMAN_NUMERAL_UPPER_LIMIT) {
-			result = CommonUtil.ERR_NUMBER_GREATER_THAN_UPPER_LIMIT;
+			result = CommonUtil.ERR_MSG_NUMBER_GREATER_THAN_UPPER_LIMIT;
 		} else {
 			result = "";
 		}
