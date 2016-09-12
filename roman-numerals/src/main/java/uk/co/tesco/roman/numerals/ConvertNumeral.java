@@ -19,7 +19,16 @@ public class ConvertNumeral {
 	 *         unable to convert.
 	 */
 	public String convert(int numeral) {
-		return String.valueOf(numeral);
+		String result = null;
+
+		if (numeral < CommonUtil.ROMAN_NUMERAL_LOWER_LIMIT) {
+			result = CommonUtil.ERR_NUMBER_LESS_THAN_LOWER_LIMIT;
+		} else if (numeral > CommonUtil.ROMAN_NUMERAL_UPPER_LIMIT) {
+			result = CommonUtil.ERR_NUMBER_GREATER_THAN_UPPER_LIMIT;
+		} else {
+			
+		}
+		return result;
 	}
 
 }
