@@ -26,7 +26,7 @@ public class ConvertNumeral {
 		} else if (numeral > CommonUtil.ROMAN_NUMERAL_UPPER_LIMIT) {
 			result = CommonUtil.ERR_NUMBER_GREATER_THAN_UPPER_LIMIT;
 		} else {
-			
+			result = "";
 		}
 		return result;
 	}
