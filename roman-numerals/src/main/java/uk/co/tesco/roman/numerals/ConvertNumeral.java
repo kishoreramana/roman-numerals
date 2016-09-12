@@ -19,7 +19,7 @@ public class ConvertNumeral {
 	 * @return - A String containing its corresponding roman numeral or
 	 *         null/error message if unable to convert.
 	 */
-	public String convert(int numeral) {
+	public String toRoman(int numeral) {
 		String result = null;
 		StringBuilder tempBuffer = null;
 		final RomanNumerals[] values;

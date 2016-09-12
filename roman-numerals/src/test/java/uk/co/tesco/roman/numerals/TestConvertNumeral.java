@@ -38,57 +38,57 @@ public class TestConvertNumeral {
 
 	@Test
 	public void testNotNull() {
-		assertNotNull(convertNumeral.convert(1));
+		assertNotNull(convertNumeral.toRoman(1));
 	}
 
 	@Test
 	public void testLessThanZero() {
-		assertEquals(CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.convert(-1));
+		assertEquals(CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.toRoman(-1));
 	}
 
 	@Test
 	public void testEqualToZero() {
-		assertEquals(CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.convert(0));
+		assertEquals(CommonUtil.ERR_MSG_NUMBER_LESS_THAN_LOWER_LIMIT, convertNumeral.toRoman(0));
 	}
 
 	@Test
 	public void testGreaterThanUpperLimit() {
-		assertEquals(CommonUtil.ERR_MSG_NUMBER_GREATER_THAN_UPPER_LIMIT, convertNumeral.convert(4000));
+		assertEquals(CommonUtil.ERR_MSG_NUMBER_GREATER_THAN_UPPER_LIMIT, convertNumeral.toRoman(4000));
 	}
 
 	@Test
 	public void testEqualTo64() {
-		assertEquals("LXIV", convertNumeral.convert(64));
+		assertEquals("LXIV", convertNumeral.toRoman(64));
 	}
 
 	@Test
 	public void testEqualTo226() {
-		assertEquals("CCXXVI", convertNumeral.convert(226));
+		assertEquals("CCXXVI", convertNumeral.toRoman(226));
 	}
 
 	@Test
 	public void testEqualTo990() {
-		assertEquals("CM", convertNumeral.convert(900));
+		assertEquals("CM", convertNumeral.toRoman(900));
 	}
 
 	@Test
 	public void testEqualTo998() {
-		assertEquals("CMXCVIII", convertNumeral.convert(998));
+		assertEquals("CMXCVIII", convertNumeral.toRoman(998));
 	}
 
 	@Test
 	public void testEqualTo1712() {
-		assertEquals("MDCCXII", convertNumeral.convert(1712));
+		assertEquals("MDCCXII", convertNumeral.toRoman(1712));
 	}
 
 	@Test
 	public void testEqualTo3992() {
-		assertEquals("MMMCMXCII", convertNumeral.convert(3992));
+		assertEquals("MMMCMXCII", convertNumeral.toRoman(3992));
 	}
 
 	@Test
 	public void testEqualTo3999() {
-		assertEquals("MMMCMXCIX", convertNumeral.convert(3999));
+		assertEquals("MMMCMXCIX", convertNumeral.toRoman(3999));
 	}
 
 }
